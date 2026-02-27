@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MyFirstApp</string>
+    <string name="greeting">Привет, Android!</string>
+    <string name="test_app">Это тестовое приложение на Android.</string>
+</resources>
