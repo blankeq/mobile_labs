@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MyNotFirstApp</string>
+    <string name="btn_1">Продукты</string>
+    <string name="btn_2">Книги</string>
+</resources>
