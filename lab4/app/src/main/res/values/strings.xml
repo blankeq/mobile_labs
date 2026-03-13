@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">MyNotFirstApp</string>
+    <string name="btn_1">Продукты</string>
+    <string name="btn_2">Книги</string>
+    <string name="btn_3">Профиль</string>
+    <string name="profile_name">Иван Иванов</string>
+    <string name="profile_status">Android-разработчик</string>
+    <string name="profile_phone">8-800-555-35-35</string>
+    <string name="profile_email">example@foolbox.xd</string>
+    <string name="button_edit">Редактировать</string>
+    <string name="toast_message">Редактирование профиля</string>
+</resources>
