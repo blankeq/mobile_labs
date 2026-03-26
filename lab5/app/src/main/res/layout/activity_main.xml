@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <!-- Блок 1: Счётчик -->
+
+            <TextView
+                android:id="@+id/textCounter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/counter_text"
+                android:textSize="24sp"
+                android:layout_marginBottom="16dp"/>
+
+            <Button
+                android:id="@+id/buttonIncrement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/button_increment"
+                android:layout_marginBottom="12dp"/>
+
+            <Button
+                android:id="@+id/buttonReset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/button_reset"
+                android:layout_marginBottom="24dp"/>
+
+            <!-- Блок 2: Поле ввода и отображение текста -->
+
+            <EditText
+                android:id="@+id/editTextInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_input"
+                android:inputType="text"
+                android:layout_marginBottom="8dp"/>
+
+            <Button
+                android:id="@+id/buttonShow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/button_show"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/textEntered"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_entered"
+                android:textSize="18sp"
+                android:layout_marginBottom="24dp"/>
+
+            <!-- Блок 3: ToDo список -->
+
+            <EditText
+                android:id="@+id/editTextTask"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_input_task"
+                android:inputType="text"
+                android:layout_marginBottom="8dp"/>
+
+            <Button
+                android:id="@+id/buttonAddTask"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/button_add_task"
+                android:layout_marginBottom="4dp"/>
+
+            <Button
+                android:id="@+id/buttonDelLastTask"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:text="@string/button_del_last_task" />
+
+            <Button
+                android:id="@+id/buttonDelTasks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="@string/button_del_tasks" />
+
+            <EditText
+                android:id="@+id/editTextTaskId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:hint="@string/hint_input_task_id"
+                android:inputType="number" />
+
+            <Button
+                android:id="@+id/buttonDelTaskById"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="@string/button_del_task_by_id" />
+
+            <TextView
+                android:id="@+id/textTasks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F0F0F0"
+                android:padding="8dp"
+                android:text="@string/label_tasks"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

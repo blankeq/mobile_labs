@@ -40,10 +40,6 @@ class ProfileActivity : AppCompatActivity() {
         val editName = findViewById<EditText>(R.id.editName)
         val textStatus = findViewById<TextView>(R.id.textStatus)
         val editStatus = findViewById<EditText>(R.id.editStatus)
-        val textPhone = findViewById<TextView>(R.id.textPhone)
-        val textEmail = findViewById<TextView>(R.id.textEmail)
-        val layout = findViewById<ConstraintLayout>(R.id.main)
-        val constraintSet = ConstraintSet()
 
         btnEdit.setOnClickListener {
             if (!isEditing) {
