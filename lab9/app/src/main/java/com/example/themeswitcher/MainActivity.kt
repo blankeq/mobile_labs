@@ -20,7 +20,6 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        // Инициализация SettingsManager
         val settingsManager = SettingsManager(this)
 
         setContent {
@@ -40,6 +39,9 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun ThemeScreen(viewModel: ThemeViewModel = viewModel()) {
+    val currentTheme by viewModel.themeMode.collectAsState()
+    val themeOptions = listOf("Системная", "Светлая", "Тёмная")
+
     Column(
         modifier = Modifier.fillMaxSize(),
         horizontalAlignment = Alignment.CenterHorizontally
@@ -51,9 +53,6 @@ fun ThemeScreen(viewModel: ThemeViewModel = viewModel()) {
         )
 
         Spacer(modifier = Modifier.height(16.dp))
-
-        val currentTheme by viewModel.themeMode.collectAsState()
-        val themeOptions = listOf("Системная", "Светлая", "Тёмная")
 
         Column(modifier = Modifier.padding(16.dp)) {
             Text("Выберите тему:", style = MaterialTheme.typography.titleMedium)
@@ -106,7 +105,7 @@ fun ThemeScreen(viewModel: ThemeViewModel = viewModel()) {
             horizontalArrangement = Arrangement.spacedBy(8.dp)
         ) {
             Button(
-                onClick = { /* Действие 1 */ },
+                onClick = {},
                 colors = ButtonDefaults.buttonColors(
                     containerColor = MaterialTheme.colorScheme.secondary
                 )
@@ -115,7 +114,7 @@ fun ThemeScreen(viewModel: ThemeViewModel = viewModel()) {
             }
 
             OutlinedButton(
-                onClick = { /* Действие 2 */ }
+                onClick = {}
             ) {
                 Text("Кнопка 2")
             }
